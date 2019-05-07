@@ -1,0 +1,5 @@
+cron:
+  - description: "Daily Cloud Datastore Export"
+    url: /cloudDatastoreExport?outputUrlPrefix=gs://${BUCKET}&kind=${KIND1}&kind=${KIND2}
+    schedule: every day 00:00
+    timezone: Asia/Tokyo
